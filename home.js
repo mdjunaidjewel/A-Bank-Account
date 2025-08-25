@@ -68,6 +68,7 @@ withDraw.addEventListener('click',function(e){
 
 const addMoneyBtn = document.getElementById('add-money-btn');
 const cashOutBtn = document.getElementById('cash-out-btn');
+const transferBtn = document.getElementById('transfer-money-btn');
 
 addMoneyBtn.addEventListener('click',function(){
     document.getElementById('latest-payment-area').style.display = 'none';
@@ -79,4 +80,10 @@ cashOutBtn.addEventListener('click',function(){
     document.getElementById('latest-payment-area').style.display = 'none';
     document.getElementById('add-money-area').style.display = 'none';
     document.getElementById('cash-out-area').style.display = 'block';
-})
+});
+
+transferBtn.addEventListener('click',function(){
+    document.getElementById('add-money-area').style.display = 'none';
+    document.getElementById('cash-out-area').style.display = 'none';
+    document.getElementById('latest-payment-area').style.display = 'block';
+});
