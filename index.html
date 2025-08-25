@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <!-- DaisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f5f6f7]">
+    <main class="flex flex-col items-center justify-center h-[100vh] max-w-[400px] mx-auto">
+        <div class=" h-[110px] w-[260px] bg-[url(./assets/bg.png)] bg-cover pt-2">
+            <div class="flex items-end justify-center h-[80%]">
+                <img src="assets/Group.png" alt="">
+            </div>
+        </div>
+        <!-- This is part of Login -->
+        <form class="bg-[#ffffff] w-[300px] py-5 px-6 rounded-3xl">
+            <div class="w-full">
+                <legend class="fieldset-legend">Mobile Number</legend>
+                <input id="mobile-number" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter Your Number" />
+            </div>
+            <div class="py-3 w-full">
+                <legend class="fieldset-legend"> 4 Digit Pin</legend>
+                <input id="pin-number" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter 4 Digit Pin" />
+            </div>
+            <div class="py-2">
+                <button id="login-btn" class="btn btn-soft bg-blue-600 text-white w-full rounded-4xl">Login</button>
+            </div>
+        </form>
+        <!-- Login End -->
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

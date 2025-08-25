@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- DaisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-[#f5f6f7]">
+    <main class="max-w-[450px] py-5">
+        <div class="flex justify-between items-center border-b-2 border-b-[#e6e6e6] py-3 px-4">
+            <div class="flex items-center justify-between">
+                <div class="w-13"><img src="assets/Group.png" alt=""></div>
+                <div>
+                    <h1 class="font-bold">$<span id="available-balance">45000</span></h1>
+                    <p class="text-[#828282]">Available Balance</p>
+                </div>
+            </div>
+            <button id="log-out" class=" cursor-pointer hover:bg-amber-500 duration-200 hover:text-white text-[#828282] border-2 border-[#e6e6e6] p-1 rounded-md"><i class="fa-solid fa-right-from-bracket rotate-180 mr-0.5"></i>Log Out</button>
+        </div>
+
+        <div class="py-3 px-4 mt-4">
+            <div class="mb-5">
+                <h1 class="font-bold text-2xl">🔥 Welcome to Payooo!</h1>
+                <p class="text-[#828282] text-md">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            <div class="grid grid-cols-3 gap-1.5 text-center">
+                <div id="add-money-btn" class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6] p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/wallet1.png" alt="">
+                    <span>Add Money</span>
+                </div>
+                <div id="cash-out-btn" class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6]  p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/send1.png" alt="">
+                    <span>Cashout</span>
+                </div>
+                <div class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6] p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/money1.png" alt="">
+                    <span>Transfer Money</span>
+                </div>
+                <div class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6] p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/bonus1.png" alt="">
+                    <span>Get Bonus</span>
+                </div>
+                <div class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6] p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/purse1.png">
+                    <span>Pay Bill</span>
+                </div>
+                <div class="flex flex-col items-center justify-center rounded-xl border-1 border-[#e6e6e6] p-2 h-[6.5rem] hover:bg-[#f1c40f] duration-300 cursor-pointer">
+                    <img src="assets/transaction1.png" alt="">
+                    <span>Transactions</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="latest-payment-area" class="py-3 px-4 m-2">
+            <div class="flex justify-between mb-2">
+                <span class="text-xl font-bold">Latest Payment</span>
+                <a href="#" class="text-[#828282]">View All</a>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <div class="flex justify-between items-center bg-[#ffffff] p-3 rounded-xl">
+                    <div class="flex justify-between items-center gap-4">
+                        <img src="assets/wallet1.png" alt="">
+                        <div>
+                            <span class="font-semibold">Electricity Bill</span>
+                            <p>Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i></div>
+                </div>
+                <div class="flex justify-between items-center bg-[#ffffff] p-3 rounded-xl">
+                    <div class="flex justify-between items-center gap-4">
+                        <img src="assets/wallet1.png" alt="">
+                        <div>
+                            <span class="font-semibold">Bank Deposit</span>
+                            <p>Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i></div>
+                </div>
+                <div class="flex justify-between items-center bg-[#ffffff] p-3 rounded-xl">
+                    <div class="flex justify-between items-center gap-4">
+                        <img src="assets/wallet1.png" alt="">
+                        <div>
+                            <span class="font-semibold">Mobile Recharge</span>
+                            <p>Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i></div>
+                </div>
+                <div class="flex justify-between items-center bg-[#ffffff] p-3 rounded-xl">
+                    <div class="flex justify-between items-center gap-4">
+                        <img src="assets/wallet1.png" alt="">
+                        <div>
+                            <span class="font-semibold">Gas Bill</span>
+                            <p>Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This here Add money -->
+
+        <div id="add-money-area" class="py-3 px-4 m-2 hidden">
+            <span class="font-semibold">Add Money</span>
+            <form class="bg-[#ffffff] w-full py-5 px-6 rounded-3xl mt-4">
+                <div class="w-full">
+                    <legend class="fieldset-legend">Select Bank</legend>
+                    <select class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full">
+                        <option selected>Select Bank</option>
+                        <option>Islami Bank</option>
+                        <option>Easter Bank</option>
+                        <option>Sonali Bank</option>
+                    </select>
+                </div>
+                <div class="w-full">
+                <legend class="fieldset-legend">Bank Account Number</legend>
+                <input id="bank-number" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter 11 Digit Account Number" />
+                </div>
+                <div class="w-full">
+                <legend class="fieldset-legend">Amount to Add</legend>
+                <input id="add-amount" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Add Amount to Withdraw" />
+                </div>
+                <div class="py-3 w-full">
+                <legend class="fieldset-legend">Pin Number</legend>
+                <input id="pin-number" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter 4 Digit Pin Number" />
+                </div>
+                <div class="py-2">
+                <button id="add-money" class="btn btn-soft bg-blue-600 text-white w-full rounded-4xl">Add Money</button>
+                </div>
+            </form>
+        </div>
+        <!-- End Add money -->
+
+        <!-- CashOut Start -->
+         <div id="cash-out-area" class="py-3 px-4 m-2 hidden">
+            <span class="font-semibold">Cash Out</span>
+            <form class="bg-[#ffffff] w-full py-5 px-6 rounded-3xl mt-4">
+                <div class="w-full">
+                <legend class="fieldset-legend">Agent Number</legend>
+                <input id="agent-number" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter 11 digit number" />
+                </div>
+                <div class="w-full">
+                <legend class="fieldset-legend">Amount</legend>
+                <input id="agent-amount" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter amount to withdraw" />
+                </div>
+                <div class="py-3 w-full">
+                <legend class="fieldset-legend">Pin Number</legend>
+                <input id="agent-pin" class="border-none bg-[#f5f6f7] py-2 px-4 rounded-3xl w-full" type="text" class="input" placeholder="Enter 4 digit pin number" />
+                </div>
+                <div class="py-2">
+                <button id="with-draw" class="btn btn-soft bg-blue-600 text-white w-full rounded-4xl">Withdraw Money</button>
+                </div>
+            </form>
+        </div>
+        <!-- CashOut End -->
+    </main>
+
+    <script src="home.js"></script>
+</body>
+</html>
